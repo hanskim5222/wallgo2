@@ -290,9 +290,9 @@ h1,h2,h3,p{ margin:0; }
 .wall.h{ height:7px; width:var(--u); }
 @keyframes wallIn{ from{ opacity:0; } to{ opacity:1; } }
 
-.cands{ position:absolute; inset:0; z-index:5; }
+.cands{ position:absolute; inset:0; pointer-events:none; z-index:5; }
 .cand{
-  position:absolute; padding:0; border:0; background:transparent; cursor:pointer;
+  position:absolute; padding:0; border:0; background:transparent; cursor:pointer; pointer-events:auto;
   transform:translate(-50%,-50%);
 }
 .cand.up,.cand.down{ width:calc(var(--u) * .9); height:40px; }
